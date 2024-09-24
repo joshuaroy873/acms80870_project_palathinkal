@@ -12,7 +12,7 @@ For context, in 2015, the FCC established CBRS 1.0 for sharing the 3.5 GHz Band 
 3. GAA for unlicensed users, subject to avoiding interference with both PALs and incumbents.
 
 <figure>
-    <img src="/documentation/cbrs_license.png" width="722" height="270"
+    <img src="/documentation/cbrs_license.png" width="481.5" height="180"
          alt="cbrs_license">
     <figcaption>Figure 1: <i>Three-tier hierarchical architecture of CBRS band.</i></figcaption>
 </figure>
