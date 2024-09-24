@@ -15,7 +15,7 @@ For context, in 2015, the FCC established CBRS 1.0 for sharing the 3.5 GHz Band 
 Three-tier hierarchical architecture of CBRS band.
 
 <figure>
-    <img src="/documentation/cbrs_license.png"
+    <img src="/documentation/cbrs_license.png" width="722" height="270"
          alt="cbrs_license">
     <figcaption>Three-tier hierarchical architecture of CBRS band.</figcaption>
 </figure>
