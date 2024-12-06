@@ -1,4 +1,5 @@
 from scipy.interpolate import interp1d
+import numpy as np
 
 def gain_calc(df_antenna, ue_azimuth, ue_elevation):
     gain_azimuth = df_antenna['gain_azimuth'].values
