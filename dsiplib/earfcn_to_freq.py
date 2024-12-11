@@ -1,3 +1,5 @@
+# Function to map the frequency value from the EAR-FCN.
+
 def earfcn_to_freq(earfcn):
     cell_table = [
         (1, 0, 599, 2110.0),

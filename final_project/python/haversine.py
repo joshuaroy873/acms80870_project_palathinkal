@@ -1,5 +1,7 @@
 import numpy as np
 
+## Function to calculate the haversine of two lat-lon pair
+
 def haversine(ue_lat, ue_lon, bs_lat, bs_lon, bs_height, rx_height=1.5):
     lat1_rad = np.radians(ue_lat)
     lon1_rad = np.radians(ue_lon)
