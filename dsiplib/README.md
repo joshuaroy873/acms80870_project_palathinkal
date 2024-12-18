@@ -5,7 +5,7 @@ EARFCN2freq and Haversine calculation functions are implemented in this package.
 ## Installation
 
 ```bash
-$ pip install dsiplib
+pip install git+https://github.com/joshuaroy873/acms80870_project_palathinkal.git#subdirectory=dsiplib
 ```
 
 ## Usage
