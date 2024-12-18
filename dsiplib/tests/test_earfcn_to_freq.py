@@ -4,7 +4,7 @@ def test_earfcn_valid():
     # Test valid EARFCN values within known ranges
     assert earfcn_to_freq(100) == 2110.0 + 0.1 * (100 - 0)  # Band 1
     assert earfcn_to_freq(700) == 1930.0 + 0.1 * (700 - 600)  # Band 2
-    assert earfcn_to_freq(39650) == 2570.0  # Band 41
+    assert earfcn_to_freq(39650) == 2496.0  # Correct frequency for Band 41
 
 def test_earfcn_nan():
     # Test for "NaN" input
