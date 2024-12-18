@@ -10,7 +10,11 @@ $ pip install dsiplib
 
 ## Usage
 
-- TODO
+### Installing the Package
+To use the `dsiplib` package, install it directly from the GitHub repository using the following command:
+
+```bash
+pip install git+https://github.com/joshuaroy873/acms80870_project_palathinkal.git#subdirectory=dsiplib
 
 ## Contributing
 
