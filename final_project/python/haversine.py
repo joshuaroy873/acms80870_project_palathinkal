@@ -3,6 +3,22 @@ import numpy as np
 ## Function to calculate the haversine of two lat-lon pair
 
 def haversine(ue_lat, ue_lon, bs_lat, bs_lon, bs_height, rx_height=1.5):
+    """
+    Calculate the 2D and 3D distances between two points on the Earth's surface using the Haversine formula.
+
+    Parameters:
+    ue_lat (float): Latitude of the user equipment (UE) in degrees.
+    ue_lon (float): Longitude of the user equipment (UE) in degrees.
+    bs_lat (float): Latitude of the base station (BS) in degrees.
+    bs_lon (float): Longitude of the base station (BS) in degrees.
+    bs_height (float): Height of the base station (BS) in meters.
+    rx_height (float, optional): Height of the receiver (default is 1.5 meters).
+
+    Returns:
+    tuple: A tuple containing:
+        - distance_2d (float): The 2D distance between the two points in meters.
+        - distance_3d (float): The 3D distance between the two points in meters, accounting for height difference.
+    """
     lat1_rad = np.radians(ue_lat)
     lon1_rad = np.radians(ue_lon)
     lat2_rad = np.radians(bs_lat)

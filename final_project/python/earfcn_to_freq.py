@@ -1,4 +1,19 @@
 def earfcn_to_freq(earfcn):
+    """
+    Convert E-UTRA Absolute Radio Frequency Channel Number (EARFCN) to frequency.
+
+    This function takes an EARFCN value and converts it to the corresponding frequency 
+    in MHz based on predefined EARFCN ranges and their associated base frequencies.
+
+    Parameters:
+    earfcn (int or str): The EARFCN value to be converted. If the value is "NaN", 
+                         the function returns "N/A".
+
+    Returns:
+    float or str: The frequency in MHz corresponding to the given EARFCN. If the 
+                  EARFCN is "NaN", returns "N/A". If the EARFCN does not fall within 
+                  any predefined range, returns 0.0.
+    """
     cell_table = [
         (1, 0, 599, 2110.0),
         (2, 600, 1199, 1930.0),
