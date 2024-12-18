@@ -1,22 +1,11 @@
 # acms80870_project_palathinkal
 
-This repo is to study the path loss (PL) modelling for radio systems working in the Citizens Broadband Radio Service (CBRS) band.
+## Review of displib package:
 
-For this, measurements were collected using smartphones (also called user-equipments (UEs)), and these measurements are analyzed to extract received signal strenght measurements (i.e., Reference Signal Received Power, abbreviated as RSRP).
+To create the `dsiplib` package, I started by setting up the project structure using a `src`-based layout, with the source code in `src/dsiplib` and tests in the `tests` folder. Inside `src/dsiplib`, I created two modules: `haversine.py` for calculating distances using the Haversine formula and `earfcn_to_freq.py` for converting EARFCN values to frequencies. An `__init__.py` file was added to expose these functions for easy import.
 
-As expected, the measurements are not perfect, and cleaning process needs to be performed before using it to statistical model path loss.
+Unit tests for both functions were written and stored in `tests`. I used `pytest` to ensure all tests passed. For dependency management, I configured a `pyproject.toml` file using Poetry, specifying metadata, dependencies, and the `src` directory as the package root. The package was built with `poetry build` and tested locally using `pip install -e .`.
 
-<!--
+The package was pushed to GitHub and made installable directly from the repository using `pip install git+https://github.com/joshuaroy873/acms80870_project_palathinkal.git#subdirectory=dsiplib`. A detailed `README.md` in the `dsiplib` folder documents installation, usage, and examples. For more information, please refer to the `README` in the `dsiplib` folder.
 
-For context, in 2015, the Federal Communications Commission (FCC) established CBRS 1.0 for sharing the 3.5 GHz Band (3550-3700 MHz) among federal and non-federal users in the United States. This rulemaking was implemented in a novel three-tier rights structure (as shown in Fig 1):
-1. strong protections for incumbents, including government radar systems;
-2. PALs granting exclusive rights to high bidders in an FCC auction, subject to avoiding interference with incumbents; and
-3. GAA for unlicensed users, subject to avoiding interference with both PALs and incumbents.
-
-<figure>
-    <img src="/documentation/cbrs_license.png" width="577.8" height="216"
-         alt="cbrs_license">
-    <figcaption>Figure 1: <i>Three-tier hierarchical architecture of CBRS band.</i></figcaption>
-</figure>
-
--->
+Additionally, information about the `\final_project` is provided in the `\final_project\documents\final_report.pdf` file. Please refer to this document for further details.
