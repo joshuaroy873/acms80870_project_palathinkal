@@ -10,4 +10,12 @@ The package was pushed to GitHub and made installable directly from the reposito
 
 ## Review of `final_project`:
 
-Additionally, information about the `\final_project` is provided in the `\final_project\documents\final_report.pdf` file. Please refer to this document for further details.
+Additionally, information about the `\final_project` is provided in the `\final_project\documents\final_report.pdf` file. This document contains a comprehensive explanation of the project's objectives, methods, and results. Please refer to this document for further details.
+
+All notebook files inside the `\final_project\notebooks` folder are reproducible using the `final_project\environment.yml` file, which is a Conda environment file. To reproduce the results, create a Conda environment using the following command:
+```bash
+conda env create -f final_project/environment.yml
+conda activate acms_env
+```
+
+After activating the `acms_env` environment, you can run the notebooks to reproduce the analyses and results.
