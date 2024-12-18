@@ -20,10 +20,10 @@ pip install git+https://github.com/joshuaroy873/acms80870_project_palathinkal.gi
 ## Example Usage
 
 ### Step 1: Create a Script
-Create a Python script named `disp_use.py` in your project directory.
+Create a Python script named `displib_use.py` in your project directory.
 
 ### Step 2: Add the Following Code
-Add the following code to the `disp_use.py` file:
+Add the following code to the `displib_use.py` file:
 
 ```python
 from dsiplib import haversine, earfcn_to_freq
@@ -41,10 +41,9 @@ print(f"Frequency: {freq}")
 Run the script using the following command:
 
 ```bash
-python disp_use.py
+python displib_use.py
 ```
 
-### Expected Output
 ### Expected Output
 
 When you run the script, you should see output similar to the following:
